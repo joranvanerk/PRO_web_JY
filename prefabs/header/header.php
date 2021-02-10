@@ -32,9 +32,8 @@
             <col-6>
               <!-- Alle knoppen om na een volgende pagina te gaan -->
               <a class="navbar-item" style="padding-right: 20px;" id="white" href="./index.php">Home</a>
-              <a class="navbar-item" style="padding-right: 20px;" id="white" href="./gameplay.php">Gameplay</a>
-              <a class="navbar-item" style="padding-right: 20px;" id="white" href="./survival.php">Survival</a>
-              <a class="navbar-item" style="padding-right: 20px;" id="white" href="./creative.php">Creative</a>
+              <a class="navbar-item" style="padding-right: 20px;" id="white" href="./gameplay.php">Aanmelden</a>
+              <a class="navbar-item" style="padding-right: 20px;" id="white" href="./survival.php">game</a>
               <a href="https://online.samensocial.nl/paneel">
               <button type="button" class="btn btn-primary">login</button></a>
             </col-6>
