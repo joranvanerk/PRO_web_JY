@@ -14,18 +14,16 @@
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
     <!-- eigen css header -->
-    <link rel="stylesheet" href="./prefabs/header/header.css">
   </head>
   <body>
 
 <!-- Dit is de script om de header te laten werken -->
 <header>
 <!-- Navbar -->
-  <nav class="navbar navbar-light bg-dark">
+  <nav class="navbar navbar-light bg-dark" style="max-height: 75px;">
     <div class="container-fluid">
       <col-6>
-        <img src="./img/pickaxe2.gif" alt="">
-        <img class="navbar-brand" src="./img/logo.png" style="height: 75; padding: -20px;"></img>
+        <img class="navbar-brand" src="./img/logo.png" style="height: 75; margin-top: -17;"></img>
       </col-6>
         <form class="d-flex input-group w-auto">
           <li class="nav-item">
