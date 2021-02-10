@@ -16,7 +16,7 @@
     <?php include_once("./prefabs/header/header.php") ?>
 
     <!-- content van de pagina :) ;) -->
-    <?php include_once("./prefabs/") ?>
+    <!-- "<?php include_once("./prefabs/") ?> -->
     
     <!-- Is dat tekst onder te website die je ziet -->
     <footer class="page-footer center-on-small-only pt-0 mt-5"><?php include_once("./prefabs/footer/footer.php") ?></footer>

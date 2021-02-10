@@ -25,15 +25,15 @@
     <div class="container-fluid">
       <col-6>
         <img src="./img/pickaxe2.gif" alt="">
-        <a class="navbar-brand" id="white">Minecraft wiki</a>
+        <a class="navbar-brand text-white">SpaceY</a>
       </col-6>
         <form class="d-flex input-group w-auto">
           <li class="nav-item">
             <col-6>
               <!-- Alle knoppen om na een volgende pagina te gaan -->
-              <a class="navbar-item" style="padding-right: 20px;" id="white" href="./index.php">Home</a>
-              <a class="navbar-item" style="padding-right: 20px;" id="white" href="./gameplay.php">Aanmelden</a>
-              <a class="navbar-item" style="padding-right: 20px;" id="white" href="./survival.php">game</a>
+              <a class="navbar-item text-white" style="padding-right: 20px;" href="./index.php">Home</a>
+              <a class="navbar-item text-white" style="padding-right: 20px;" href="./gameplay.php">Aanmelden</a>
+              <a class="navbar-item text-white" style="padding-right: 20px;" href="./survival.php">game</a>
               <a href="https://online.samensocial.nl/paneel">
               <button type="button" class="btn btn-primary">login</button></a>
             </col-6>

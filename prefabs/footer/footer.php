@@ -23,12 +23,10 @@
     <div class="row">
       <!--Grid column-->
       <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-uppercase">MineCraft WIKI+</h5>
+        <h5 class="text-uppercase">SpaceY</h5>
 
         <p>
-          MineCraft WIKI+, ontworpen voor snel en gemakkelijk bereik richting de populaire game MineCraft. 
-          Deze game is al ruim 10 jaar oud en is tot heden nogsteeds erg populair.
-        </p>
+         SpaceY, the education system for students
       </div>
       <!--Grid column-->
 
@@ -40,7 +38,7 @@
             <a href="./index.php" class="text-white">Home</a>
           </li>
           <li>
-            <a href="./gameplay.php" class="text-white">Gameplay</a>
+            <a href="./gameplay.php" class="text-white">Aanmelden</a>
           </li>
         </ul>
       </div>
@@ -51,10 +49,10 @@
         <h5 class="text-uppercase">Navigatie</h5>
         <ul class="list-unstyled">
           <li>
-            <a href="./survival.php" class="text-white">Survival</a>
+            <a href="./survival.php" class="text-white">Game</a>
           </li>
           <li>
-            <a href="./creative.php" class="text-white">Creative</a>
+            <a href="./creative.php" class="text-white">Login</a>
           </li>
         </ul>
       </div>
@@ -67,7 +65,7 @@
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
     © 2021 Copyright:
-    <a class="text-white" href="./index.php">MineCraft WIKI+</a>
+    <a class="text-white" href="./index.php">SpaceY Education</a>
   </div>
   <!-- Copyright -->
 </footer>
