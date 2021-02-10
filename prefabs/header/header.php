@@ -25,7 +25,7 @@
     <div class="container-fluid">
       <col-6>
         <img src="./img/pickaxe2.gif" alt="">
-        <a class="navbar-brand text-white">SpaceY</a>
+        <img class="navbar-brand" src="./img/logo.png" style="height: 75; padding: -20px;"></img>
       </col-6>
         <form class="d-flex input-group w-auto">
           <li class="nav-item">
