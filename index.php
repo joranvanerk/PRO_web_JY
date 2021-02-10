@@ -10,7 +10,7 @@
     
   </head>
     <!-- Background -->
-  <body id="bodybackground">
+  <body>
   
     <!-- De tekst boven in de pagina -->
     <?php include_once("./prefabs/header/header.php") ?>
