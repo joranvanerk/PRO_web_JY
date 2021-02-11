@@ -25,7 +25,7 @@
     <div class="container-fluid">
       <col-6>
       <!-- het logo links bovenin -->
-        <img class="navbar-brand" src="./img/logo.png" style="height: 75; margin-top: -17;"></img>
+        <a href="./"><img class="navbar-brand" src="./img/logo.png" style="height: 75; margin-top: -17;"></img></a>
       </col-6>
         <form class="d-flex input-group w-auto">
         <!-- een navbar item -->
