@@ -23,8 +23,9 @@
     <div class="row">
       <!--Grid column-->
       <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+      <!-- the title of the footer -->
         <h5 class="text-uppercase">SpaceY</h5>
-
+        <!-- Detailed description -->
         <p>
          SpaceY, the education system for students
       </div>
@@ -32,12 +33,15 @@
 
       <!--Grid column-->
       <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+      <!-- the title of the footer -->
         <h5 class="text-uppercase">Navigatie</h5>
         <ul class="list-unstyled">
           <li>
+          <!-- een home item -->
             <a href="./index.php" class="text-white">Home</a>
           </li>
           <li>
+          <!-- een aanmelden item -->
             <a href="./gameplay.php" class="text-white">Aanmelden</a>
           </li>
         </ul>
@@ -46,12 +50,15 @@
 
       <!--Grid column-->
       <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+      <!-- the title of the footer -->
         <h5 class="text-uppercase">Navigatie</h5>
         <ul class="list-unstyled">
           <li>
+          <!-- een game item -->
             <a href="./survival.php" class="text-white">Game</a>
           </li>
           <li>
+          <!-- een login knop -->
             <a href="./creative.php" class="text-white">Login</a>
           </li>
         </ul>
@@ -62,7 +69,7 @@
   </div>
   <!-- Grid container -->
 
-  <!-- Copyright -->
+  <!-- de copyright van de footer -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
     © 2021 Copyright:
     <a class="text-white" href="./index.php">SpaceY Education</a>
