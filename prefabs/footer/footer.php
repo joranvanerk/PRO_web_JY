@@ -38,11 +38,11 @@
         <ul class="list-unstyled">
           <li>
           <!-- een home item -->
-            <a href="./index.php" class="text-white">Home</a>
+            <a href="./?reference=home" class="text-white">Home</a>
           </li>
           <li>
           <!-- een aanmelden item -->
-            <a href="./gameplay.php" class="text-white">Aanmelden</a>
+            <a href="./?reference=aanmelden" class="text-white">Aanmelden</a>
           </li>
         </ul>
       </div>
@@ -55,11 +55,11 @@
         <ul class="list-unstyled">
           <li>
           <!-- een game item -->
-            <a href="./survival.php" class="text-white">Game</a>
+            <a href="./?reference=game" class="text-white">Game</a>
           </li>
           <li>
           <!-- een login knop -->
-            <a href="./creative.php" class="text-white">Login</a>
+            <a href="./paneel" class="text-white">Login</a>
           </li>
         </ul>
       </div>
