@@ -21,24 +21,36 @@
 <header>
 <!-- Navbar -->
   <nav class="navbar navbar-light bg-dark" style="max-height: 75px;">
+  <!-- een fluid container -->
     <div class="container-fluid">
       <col-6>
+      <!-- het logo links bovenin -->
         <img class="navbar-brand" src="./img/logo.png" style="height: 75; margin-top: -17;"></img>
       </col-6>
         <form class="d-flex input-group w-auto">
+        <!-- een navbar item -->
           <li class="nav-item">
             <col-6>
               <!-- Alle knoppen om na een volgende pagina te gaan -->
+              <!-- item home -->
               <a class="navbar-item text-white" style="padding-right: 20px;" href="./index.php">Home</a>
+              <!-- item aanmelden -->
               <a class="navbar-item text-white" style="padding-right: 20px;" href="./gameplay.php">Aanmelden</a>
+              <!-- item game -->
               <a class="navbar-item text-white" style="padding-right: 20px;" href="./survival.php">game</a>
+              <!-- de login knop -->
               <a href="https://online.samensocial.nl/paneel">
               <button type="button" class="btn btn-primary">login</button></a>
+              <!-- een sluit tag van column 6 -->
             </col-6>
           </li>
+          <!-- het einde van het form -->
         </form>
+        <!-- de div die sluit -->
     </div>
+    <!-- het einde van de navbar -->
   </nav>
+  <!-- het einde van de header -->
 </header>
 <!-- Navbar -->
 
