@@ -33,11 +33,11 @@
             <col-6>
               <!-- Alle knoppen om na een volgende pagina te gaan -->
               <!-- item home -->
-              <a class="navbar-item text-white" style="padding-right: 20px;" href="./index.php">Home</a>
+              <a class="navbar-item text-white" style="padding-right: 20px;" href='./?reference=home'>Home</a>
               <!-- item aanmelden -->
-              <a class="navbar-item text-white" style="padding-right: 20px;" href="./gameplay.php">Aanmelden</a>
+              <a class="navbar-item text-white" style="padding-right: 20px;" href='./?reference=aanmelden'>Aanmelden</a>
               <!-- item game -->
-              <a class="navbar-item text-white" style="padding-right: 20px;" href="./survival.php">game</a>
+              <a class="navbar-item text-white" style="padding-right: 20px;" href='./?reference=game'>game</a>
               <!-- de login knop -->
               <a href="https://online.samensocial.nl/paneel">
               <button type="button" class="btn btn-primary">login</button></a>
