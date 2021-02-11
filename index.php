@@ -1,7 +1,7 @@
 <html lang="en">
   <head>
     <!-- alle meta tags -->
-    <?php include_once("./core/required_meta_tags.html")?>
+    <?php include_once("./core/required_meta_tags.html") ?>
 
     <!-- Alle style -->
     <?php include_once("./core/style.html") ?>
@@ -16,7 +16,7 @@
     <?php include_once("./prefabs/header/header.php") ?>
 
     <!-- content van de pagina :) ;) :D-->
-    <!-- "<?php include_once("./prefabs/") ?> -->
+    <?php include_once("./prefabs/content/content.php") ?> 
     
     <!-- Is dat tekst onder te website die je ziet -->
     <footer class="page-footer center-on-small-only pt-0 mt-5"><?php include_once("./prefabs/footer/footer.php") ?></footer>
