@@ -15,7 +15,7 @@
     <!-- De tekst boven in de pagina -->
     <?php include_once("./prefabs/header/header.php") ?>
 
-    <!-- content van de pagina :) ;) -->
+    <!-- content van de pagina :) ;) :D-->
     <!-- "<?php include_once("./prefabs/") ?> -->
     
     <!-- Is dat tekst onder te website die je ziet -->
