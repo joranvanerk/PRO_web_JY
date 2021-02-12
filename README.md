@@ -12,4 +12,4 @@
 -----
 
 The web version is a framework from bootstrap and mdbootstrap,
-the game is running in the web version.
+the game is running in the web version. More information coming soon..
