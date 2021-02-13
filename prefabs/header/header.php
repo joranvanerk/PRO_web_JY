@@ -39,6 +39,7 @@
               <!-- item game -->
               <a class="navbar-item text-white" style="padding-right: 20px;" href='./?reference=game'>game</a>
               <!-- de login knop -->
+              <!-- met linkje -->
               <a href="https://online.samensocial.nl/paneel">
               <button type="button" class="btn btn-primary">login</button></a>
               <!-- een sluit tag van column 6 -->
