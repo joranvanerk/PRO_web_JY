@@ -44,6 +44,7 @@
           <!-- een aanmelden item -->
             <a href="./?reference=aanmelden" class="text-white">Aanmelden</a>
           </li>
+          <!-- sluiten lu -->
         </ul>
       </div>
       <!--Grid column-->
