@@ -44,11 +44,11 @@ if (isset($_GET["content"])) {
             <col-6>
               <!-- Alle knoppen om na een volgende pagina te gaan -->
               <!-- item home -->
-              <a class="navbar-item text-white" style="padding-right: 20px;" href='./index.php?content=home'>Home</a>
+              <a class="navbar-item text-white <?php if ( $active == "home" || $active == "" ) { echo "text-muted"; }?>" style="padding-right: 20px;" href='./index.php?content=home'>Home</a>
               <!-- item aanmelden -->
-              <a class="navbar-item text-white" style="padding-right: 20px;" href='./index.php?content=aanmelden'>Aanmelden</a>
+              <a class="navbar-item text-white <?php if ( $active == "aanmelden" || $active == "" ) { echo "text-muted"; }?>" style="padding-right: 20px;" href='./index.php?content=aanmelden'>Aanmelden</a>
               <!-- item game -->
-              <a class="navbar-item text-white" style="padding-right: 20px;" href='./index.php?content=game'>game</a>
+              <a class="navbar-item text-white <?php if ( $active == "game" || $active == "" ) { echo "text-muted"; }?>" style="padding-right: 20px;" href='./index.php?content=game'>game</a>
               <!-- de login knop -->
               <!-- met linkje -->
               <a href="#">
