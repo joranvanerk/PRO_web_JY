@@ -15,24 +15,28 @@
       <div class="col-12 col-sm-6 col-md-3">
       <!-- prijs feature -->
         <h3><strong>Prijs</strong></h3>
+        <!-- tekst van prijs -->
         <p>Wij hebben de beste prijzen voor de Kwaliteit dat je gaat krijgen bij ons.</p>
       </div>
 
       <div class="col-12 col-sm-6 col-md-3 pt-3 pt-sm-0">
       <!-- kwaliteit feature -->
         <h3><strong>Kwaliteit</strong></h3>
+        <!-- tekst van kwaliteit -->
         <p>Wij hebben de beste leer methode opgezet voor de studenten voor het uiterste resultaat.</p>
       </div>
 
       <div class="col-12 col-sm-6 col-md-3 pt-3 pt-md-0">
       <!-- interaactief feature -->
         <h3><strong>Interactief</strong></h3>
+        <!-- tekst van interactief -->
         <p>Er is een spel voor jullie opgezet om een beeld te krijgen van de opleiding.</p>
       </div>
 
       <div class="col-12 col-sm-6 col-md-3 pt-3 pt-md-0">
       <!-- praktijk feature -->
         <h3><strong>Praktijk</strong></h3>
+        <!-- tekst van praktijk -->
         <p>Naast het theorie zullen jullie zeer zeker ook het praktijk krijgen voor een optimale ervaring om alles beter te begrijpen.</p>
       </div>
     </div>
