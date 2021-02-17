@@ -2,8 +2,8 @@
   <div class="container">
     <div class="row align-items-center pb-xl-5">
       <div class="col-12 col-md-7 col-xl-5">
-        <h1>Froala Design Blocks</h1>
-        <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+        <h1>SpaceY</h1>
+        <p class="lead"> Welkom op de site van SpaceY. Hier zul je informatie vinden over de opleiding. Je kunt hier een spel vinden dat jou een beeld zal geven over de opleiding. Veel succes!</p>
       </div>
       <div class="col-12 col-sm-6 col-md-4 m-sm-auto mr-md-0 ml-md-auto pt-4 pt-md-0">
       <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -13,23 +13,23 @@
 
     <div class="row pt-5">
       <div class="col-12 col-sm-6 col-md-3">
-        <h3><strong>Feature One</strong></h3>
-        <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large ocean.</p>
+        <h3><strong>Prijs</strong></h3>
+        <p>Wij hebben de beste prijzen voor de Kwaliteit dat je gaat krijgen bij ons.</p>
       </div>
 
       <div class="col-12 col-sm-6 col-md-3 pt-3 pt-sm-0">
-        <h3><strong>Feature Two</strong></h3>
-        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+        <h3><strong>Kwaliteit</strong></h3>
+        <p>Wij hebben de beste leer methode opgezet voor de studenten voor het uiterste resultaat.</p>
       </div>
 
       <div class="col-12 col-sm-6 col-md-3 pt-3 pt-md-0">
-        <h3><strong>Feature Three</strong></h3>
-        <p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+        <h3><strong>Interactief</strong></h3>
+        <p>Er is een spel voor jullie opgezet om een beeld te krijgen van de opleiding.</p>
       </div>
 
       <div class="col-12 col-sm-6 col-md-3 pt-3 pt-md-0">
-        <h3><strong>Feature Four</strong></h3>
-        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.</p>
+        <h3><strong>Praktijk</strong></h3>
+        <p>Naast het theorie zullen jullie zeer zeker ook het praktijk krijgen voor een optimale ervaring om alles beter te begrijpen.</p>
       </div>
     </div>
   </div>
