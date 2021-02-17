@@ -1,3 +1,14 @@
+<?php 
+if (isset($_GET["content"])) {
+    $active = $_GET["content"];
+}else {
+    $active = "";
+}
+?>
+
+
+
+
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -25,7 +36,7 @@
     <div class="container-fluid">
       <col-6>
       <!-- het logo links bovenin -->
-        <a href="./"><img class="navbar-brand" src="./img/logo.png" style="height: 75; margin-top: -17;"></img></a>
+        <a href="./index.php?content=home"><img class="navbar-brand" src="./img/logo.png" style="height: 75; margin-top: -17;"></img></a>
       </col-6>
         <form class="d-flex input-group w-auto">
         <!-- een navbar item -->
@@ -33,14 +44,14 @@
             <col-6>
               <!-- Alle knoppen om na een volgende pagina te gaan -->
               <!-- item home -->
-              <a class="navbar-item text-white" style="padding-right: 20px;" href='./?reference=home'>Home</a>
+              <a class="navbar-item text-white" style="padding-right: 20px;" href='./index.php?content=home'>Home</a>
               <!-- item aanmelden -->
-              <a class="navbar-item text-white" style="padding-right: 20px;" href='./?reference=aanmelden'>Aanmelden</a>
+              <a class="navbar-item text-white" style="padding-right: 20px;" href='./index.php?content=aanmelden'>Aanmelden</a>
               <!-- item game -->
-              <a class="navbar-item text-white" style="padding-right: 20px;" href='./?reference=game'>game</a>
+              <a class="navbar-item text-white" style="padding-right: 20px;" href='./index.php?content=game'>game</a>
               <!-- de login knop -->
               <!-- met linkje -->
-              <a href="https://online.samensocial.nl/paneel">
+              <a href="#">
               <button type="button" class="btn btn-primary">login</button></a>
               <!-- een sluit tag van column 6 -->
             </col-6>
