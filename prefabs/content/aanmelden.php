@@ -1,9 +1,12 @@
 </section>
 <h2 class="font-weight-bold text-cyan-900" style="text-align: center;">
+                    <!-- titel tekst -->
                     Aanmelden voor de opleiding sterrenkunde bij SpaceY
                 </h2>
 <section class="h-100">
+    <!-- begin container -->
     <div class="container py-5">
+        <!-- begin van row -->
         <div class="row">
             <div class="order-lg-2 mb-3 mb-lg-0 col-lg-6 w-50 mx-auto">
                 <svg class="text-cyan-900" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="30ad16f1-5c99-460e-a21a-a10b3717755f" data-name="Layer 1" width="100%" height="100%" viewBox="0 0 1080 828.86">
@@ -75,25 +78,32 @@
             <div class="order-lg-1 col-lg-6">
                 <div class="card rounded shadow p-3 p-md-4">
                     <h3 class="text-center font-weight-bold text-cyan-900">
+                        <!-- tekst -->
                         Aanmelden
                     </h3>
                     <p class="text-center">
+                        <!-- tekst -->
                         Vul het formulier zo volledig mogelijk in!
                     </p>
+                    <!-- aanmeld form -->
                     <form action="">
                         <div class="mb-3">
+                            <!-- label tekst -->
                             <label for="name" class="form-label">Naam</label>
                             <input type="text" class="form-control" name="name" id="name" placeholder="Jan broekel">
                         </div>
                         <div class="mb-3">
+                            <!-- label tekst -->
                             <label for="email" class="form-label">Email</label>
                             <input type="text" class="form-control" name="email" id="email" placeholder="jan.broekel@gmail.com">
                         </div>
                         <div class="mb-3">
+                            <!-- label tekst -->
                             <label for="message" class="form-label">Motivatie</label>
                             <textarea class="form-control" name="message" id="message" cols="30" rows="6" placeholder="Ik zou graag willen deelnemen aan deze opleiding, want.."></textarea>
                         </div>
                         <div class="btn btn-block btn-cyan-900">
+                            <!-- tekst -->
                             Verzenden
                         </div>
                     </form>
@@ -103,14 +113,17 @@
     </div>
 </section>
 <section>
+    <!-- begin container -->
     <div class="container py-5">
         <div class="d-flex flex-column justify-content-center align-items-center text-center">
             <div class="col-sm-6">
                 <h2 class="font-weight-bold text-cyan-900">
+                    <!-- tekst bij wat wij bieden -->
                     Wat wij bieden
                 </h2>
             </div>
             <div class="my-3">
+                <!-- begin row -->
                 <div class="row">
                     <div class="col-md-4">
                         <div class="d-flex flex-column justify-content-around align-items-center rounded p-3">
@@ -137,8 +150,10 @@
                                     </svg>
                                 </div>
                             </span>
+                            <!-- tekst kwaliteit -->
                             <h4 class="mt-3">Kwaliteit</h4>
                             <div class="text-muted my-2">
+                                <!-- tekst kwaliteit -->
                             Wij hebben de beste leer methode opgezet voor de studenten voor het uiterste resultaat.
                             </div>
                         </div>
@@ -168,8 +183,10 @@
                                     </svg>
                                 </div>
                             </span>
+                            <!-- tekst interactief -->
                             <h4 class="mt-3">Interactief</h4>
                             <div class="text-muted my-2">
+                                <!-- tekst interactief -->
                             Er is een spel voor jullie opgezet om een beeld te krijgen van de opleiding.
                             </div>
                         </div>
@@ -199,8 +216,10 @@
                                     </svg>
                                 </div>
                             </span>
+                            <!-- tekst praktijk -->
                             <h4 class="mt-3">Praktijk</h4>
                             <div class="text-muted my-2">
+                                <!-- tekst bij praktijk -->
                             Naast het theorie zullen jullie zeer zeker ook het praktijk krijgen voor een optimale ervaring om alles beter te begrijpen.
                             </div>
                         </div>
@@ -210,3 +229,4 @@
         </div>
     </div>
 </section>
+<!-- einde sectie -->
