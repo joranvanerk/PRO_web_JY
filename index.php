@@ -23,5 +23,6 @@
 
     <!-- Alle javascript en script bestanden -->
     <?php include_once("./core/script.html"); ?>
+    
   </body>
 </html>

@@ -1,3 +1,4 @@
+    <!-- content -->
 <?php
     if (isset($_GET["content"])) {
     include("./prefabs/content/" . $_GET["content"] . ".php");
