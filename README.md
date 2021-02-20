@@ -21,4 +21,4 @@ the game is running in the web version.
 
 -----
 
-More information coming soon..
+More information coming soon...
