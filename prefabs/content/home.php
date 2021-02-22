@@ -54,3 +54,55 @@
   </div>
   <!-- einde sectie -->
 </section>
+
+<!-- de card-groep -->
+<div class="card-group" style="margin-right: 5%; margin-left: 5%; border-radius: 20px;">
+<!-- simpele card -->
+  <div class="card m-5" style="border-radius: 20px; background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%)">
+  <!-- card body met daaronder de inhoud -->
+    <div class="card-body">
+      <!-- De card titel -->
+      <h5 class="card-title">PRIJS</h5>
+      <!-- De card teksten inhoud -->
+      <p class="card-text" style="color: black;">Wij hebben de beste prijzen voor de Kwaliteit dat je gaat krijgen bij ons.</p>
+      <!-- De footer van de card -->
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <!-- simpele card -->
+  <div class="card m-5" style="border-radius: 20px; background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%)">
+  <!-- card body met daaronder de inhoud -->
+    <div class="card-body">
+      <!-- De card titel -->
+      <h5 class="card-title">KWALITEIT</h5>
+      <!-- De card teksten inhoud -->
+      <p class="card-text" style="color: black;">Wij hebben de beste leer methode opgezet voor de studenten voor het uiterste resultaat.</p>
+      <!-- De footer van de card -->
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <!-- simpele card -->
+  <div class="card m-5" style="border-radius: 20px; background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%)">
+  <!-- card body met daaronder de inhoud -->
+    <div class="card-body">
+      <!-- De card titel -->
+      <h5 class="card-title">INTERACTIEF</h5>
+      <!-- De card teksten inhoud -->
+      <p class="card-text" style="color: black;">Er is een spel voor jullie opgezet om een beeld te krijgen van de opleiding.</p>
+      <!-- De footer van de card -->
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <!-- simpele card -->
+  <div class="card m-5" style="border-radius: 20px; background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%)">
+  <!-- card body met daaronder de inhoud -->
+    <div class="card-body">
+      <!-- De card titel -->
+      <h5 class="card-title">PRAKTIJK</h5>
+      <!-- De card teksten inhoud -->
+      <p class="card-text" style="color: black;">Naast het theorie zullen jullie zeer zeker ook het praktijk krijgen voor een optimale ervaring om alles beter te begrijpen.</p>
+      <!-- De footer van de card -->
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
