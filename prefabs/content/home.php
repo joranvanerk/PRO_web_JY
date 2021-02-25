@@ -16,6 +16,7 @@
 <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_XWP6mV.json"  background="transparent"  speed="1"  style="width: 400px; height: 400px;"  loop  autoplay></lottie-player>
       </div>
     </div>
+  </div>
 
 <!-- de card-groep -->
 <div class="card-group" style="margin-right: 5%; margin-left: 5%; border-radius: 20px;">
