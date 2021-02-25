@@ -16,44 +16,6 @@
 <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_XWP6mV.json"  background="transparent"  speed="1"  style="width: 400px; height: 400px;"  loop  autoplay></lottie-player>
       </div>
     </div>
-    
-    <!-- begin van row -->
-    <div class="row pt-5">
-    <!-- responsive maken -->
-      <div class="col-12 col-sm-6 col-md-3">
-      <!-- prijs feature -->
-        <h3><strong>Prijs</strong></h3>
-        <!-- tekst van prijs -->
-        <p>Wij hebben de beste prijzen voor de Kwaliteit dat je gaat krijgen bij ons.</p>
-      </div>
-
-      <!-- responsive maken -->
-      <div class="col-12 col-sm-6 col-md-3 pt-3 pt-sm-0">
-      <!-- kwaliteit feature -->
-        <h3><strong>Kwaliteit</strong></h3>
-        <!-- tekst van kwaliteit -->
-        <p>Wij hebben de beste leer methode opgezet voor de studenten voor het uiterste resultaat.</p>
-      </div>
-   
-      <!-- responsive maken -->
-      <div class="col-12 col-sm-6 col-md-3 pt-3 pt-md-0">
-      <!-- interaactief feature -->
-        <h3><strong>Interactief</strong></h3>
-        <!-- tekst van interactief -->
-        <p>Er is een spel voor jullie opgezet om een beeld te krijgen van de opleiding.</p>
-      </div>
-
-      <!-- responsive maken -->
-      <div class="col-12 col-sm-6 col-md-3 pt-3 pt-md-0">
-      <!-- praktijk feature -->
-        <h3><strong>Praktijk</strong></h3>
-        <!-- tekst van praktijk -->
-        <p>Naast het theorie zullen jullie zeer zeker ook het praktijk krijgen voor een optimale ervaring om alles beter te begrijpen.</p>
-      </div>
-    </div>
-  </div>
-  <!-- einde sectie -->
-</section>
 
 <!-- de card-groep -->
 <div class="card-group" style="margin-right: 5%; margin-left: 5%; border-radius: 20px;">
@@ -66,7 +28,7 @@
       <!-- De card teksten inhoud -->
       <p class="card-text" style="color: black;">Wij hebben de beste prijzen voor de Kwaliteit dat je gaat krijgen bij ons.</p>
       <!-- De footer van de card -->
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <!-- <p class="card-text"><small class="text-muted">Pricing</small></p> -->
     </div>
   </div>
   <!-- simpele card -->
@@ -78,7 +40,7 @@
       <!-- De card teksten inhoud -->
       <p class="card-text" style="color: black;">Wij hebben de beste leer methode opgezet voor de studenten voor het uiterste resultaat.</p>
       <!-- De footer van de card -->
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <!-- <p class="card-text"><small class="text-muted">Quality</small></p> -->
     </div>
   </div>
   <!-- simpele card -->
@@ -90,7 +52,7 @@
       <!-- De card teksten inhoud -->
       <p class="card-text" style="color: black;">Er is een spel voor jullie opgezet om een beeld te krijgen van de opleiding.</p>
       <!-- De footer van de card -->
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <!-- <p class="card-text"><small class="text-muted">Interactive</small></p> -->
     </div>
   </div>
   <!-- simpele card -->
@@ -102,7 +64,7 @@
       <!-- De card teksten inhoud -->
       <p class="card-text" style="color: black;">Naast het theorie zullen jullie zeer zeker ook het praktijk krijgen voor een optimale ervaring om alles beter te begrijpen.</p>
       <!-- De footer van de card -->
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <!-- <p class="card-text"><small class="text-muted">Practice</small></p> -->
     </div>
   </div>
 </div>
