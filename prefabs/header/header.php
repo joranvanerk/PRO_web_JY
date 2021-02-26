@@ -1,7 +1,11 @@
-<?php 
+<?php
+// kijken of content is gezet 
 if (isset($_GET["content"])) {
+    // de juiste content variabele pakken
     $active = $_GET["content"];
+    // anders
 }else {
+    // de content variabele leeg zetten
     $active = "";
 }
 ?>
@@ -30,7 +34,7 @@ if (isset($_GET["content"])) {
 
 <!-- Dit is de script om de header te laten werken -->
 <header>
-<!-- Navbar -->
+<!-- Begin van Navbar -->
   <nav class="navbar navbar-light bg-dark" style="max-height: 75px;">
   <!-- een fluid container -->
     <div class="container-fluid">
@@ -64,7 +68,7 @@ if (isset($_GET["content"])) {
   </nav>
   <!-- het einde van de header -->
 </header>
-<!-- Navbar -->
+<!-- Einde van Navbar -->
 
     <!-- MD Bootstrap Javascripts -->
     <!-- JQuery -->
