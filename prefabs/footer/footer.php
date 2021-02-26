@@ -38,11 +38,11 @@
         <ul class="list-unstyled">
           <li>
           <!-- een home item -->
-            <a href="./?reference=home" class="text-white">Home</a>
+            <a href="./?content=home" class="text-white">Home</a>
           </li>
           <li>
           <!-- een aanmelden item -->
-            <a href="./?reference=aanmelden" class="text-white">Aanmelden</a>
+            <a href="./?content=aanmelden" class="text-white">Aanmelden</a>
           </li>
           <!-- sluiten lu -->
         </ul>
@@ -56,7 +56,7 @@
         <ul class="list-unstyled">
           <li>
           <!-- een game item -->
-            <a href="./?reference=game" class="text-white">Game</a>
+            <a href="./?content=game" class="text-white">Game</a>
           </li>
           <li>
           <!-- een login knop -->
