@@ -4,6 +4,7 @@
   <div class="container">
   <!-- begin van row -->
     <div class="row align-items-center pb-xl-5">
+      <!-- div collumns -->
       <div class="col-12 col-md-7 col-xl-5">
       <!-- titel tekst -->
         <h1>SpaceY</h1>
@@ -11,8 +12,7 @@
         <p class="lead"> Welkom op de site van SpaceY. Hier zul je informatie vinden over de opleiding. Je kunt hier een spel vinden dat jou een beeld zal geven over de opleiding. Veel succes!</p>
       </div>
       <div class="col-12 col-sm-6 col-md-4 m-sm-auto mr-md-0 ml-md-auto pt-4 pt-md-0">
-      <!-- geanimeerde lottie file -->
-      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <!-- nieuwe undraw svg -->
       <img src="./img/undraw_Outer_space_drqu.svg" height="500" width="500" alt="">
       </div>
     </div>
@@ -74,6 +74,9 @@
       <p class="card-text" style="color: black;">Naast het theorie zullen jullie zeer zeker ook het praktijk krijgen voor een optimale ervaring om alles beter te begrijpen.</p>
       <!-- De footer van de card -->
       <!-- <p class="card-text"><small class="text-muted">Practice</small></p> -->
+    <!-- einde pagina div -->
     </div>
+  <!-- nog een div sluiten -->
   </div>
+<!-- de laatste div sluiten -->
 </div>
