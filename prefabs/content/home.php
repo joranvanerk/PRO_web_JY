@@ -13,7 +13,7 @@
       <div class="col-12 col-sm-6 col-md-4 m-sm-auto mr-md-0 ml-md-auto pt-4 pt-md-0">
       <!-- geanimeerde lottie file -->
       <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player src="https://assets9.lottiefiles.com/packages/lf20_XWP6mV.json"  background="transparent"  speed="1"  style="width: 400px; height: 400px;"  loop  autoplay></lottie-player>
+      <img src="./img/undraw_Outer_space_drqu.svg" height="500" width="500" alt="">
       </div>
     </div>
   </div>
@@ -24,6 +24,8 @@
   <div class="card m-5" style="border-radius: 20px; background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%)">
   <!-- card body met daaronder de inhoud -->
     <div class="card-body">
+      <!-- icon aan de header van de card -->
+      <i class="fas fa-tags fa-3x pb-3"></i>
       <!-- De card titel -->
       <h5 class="card-title">PRIJS</h5>
       <!-- De card teksten inhoud -->
@@ -36,6 +38,8 @@
   <div class="card m-5" style="border-radius: 20px; background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%)">
   <!-- card body met daaronder de inhoud -->
     <div class="card-body">
+      <!-- icon aan de header van de card -->
+      <i class="fas fa-sliders-h fa-3x pb-3"></i>
       <!-- De card titel -->
       <h5 class="card-title">KWALITEIT</h5>
       <!-- De card teksten inhoud -->
@@ -48,6 +52,8 @@
   <div class="card m-5" style="border-radius: 20px; background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%)">
   <!-- card body met daaronder de inhoud -->
     <div class="card-body">
+      <!-- icon aan de header van de card -->
+      <i class="fas fa-adjust fa-3x pb-3"></i>
       <!-- De card titel -->
       <h5 class="card-title">INTERACTIEF</h5>
       <!-- De card teksten inhoud -->
@@ -60,6 +66,8 @@
   <div class="card m-5" style="border-radius: 20px; background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%)">
   <!-- card body met daaronder de inhoud -->
     <div class="card-body">
+      <!-- icon aan de header van de card -->
+      <i class="fas fa-space-shuttle fa-3x pb-3"></i>
       <!-- De card titel -->
       <h5 class="card-title">PRAKTIJK</h5>
       <!-- De card teksten inhoud -->
