@@ -7,10 +7,12 @@
       <!-- div collumns -->
       <div class="col-12 col-md-7 col-xl-5">
       <!-- titel tekst -->
-        <h1>SpaceY</h1>
+        <h1>SpaceY Sterrenkunde</h1>
         <!-- banner tekst -->
         <p class="lead"> Welkom op de site van SpaceY. Hier zul je informatie vinden over de opleiding. Je kunt hier een spel vinden dat jou een beeld zal geven over de opleiding. Veel succes!</p>
+        <!-- einde sluit div -->
       </div>
+      <!-- de div met collumns en responsive -->
       <div class="col-12 col-sm-6 col-md-4 m-sm-auto mr-md-0 ml-md-auto pt-4 pt-md-0">
       <!-- nieuwe undraw svg -->
       <img src="./img/undraw_Outer_space_drqu.svg" height="500" width="500" alt="">
