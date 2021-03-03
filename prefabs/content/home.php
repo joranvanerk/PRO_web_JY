@@ -104,6 +104,7 @@
 			  </a>
       <!-- einde van de titel -->
 			</h3>
+      <!-- einde div -->
 		  </div>
 		  <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
 			<div class="panel-body px-3 mb-4">
@@ -111,7 +112,8 @@
 			</div>
 		  </div>
 		</div>
-		
+    <!-- einde div -->
+
 		<div class="panel panel-default">
 		  <div class="panel-heading p-3 mb-3" role="tab" id="heading1">
 			<h3 class="panel-title">
