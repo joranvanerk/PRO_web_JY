@@ -113,7 +113,8 @@
 		  </div>
 		</div>
     <!-- einde div -->
-
+    
+    <!-- begin div -->
 		<div class="panel panel-default">
 		  <div class="panel-heading p-3 mb-3" role="tab" id="heading1">
 			<h3 class="panel-title">
@@ -128,8 +129,10 @@
 			</div>
 		  </div>
 		</div>
+    <!-- einde div -->
 		
-		<div class="panel panel-default">
+		<!-- begin div -->
+    <div class="panel panel-default">
 		  <div class="panel-heading p-3 mb-3" role="tab" id="heading2">
 			<h3 class="panel-title">
 			  <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
@@ -143,7 +146,9 @@
 			</div>
 		  </div>
 		</div>
+    <!-- einde div -->
 		
+    
 		<div class="panel panel-default">
 		  <div class="panel-heading p-3 mb-3" role="tab" id="heading3">
 			<h3 class="panel-title">
