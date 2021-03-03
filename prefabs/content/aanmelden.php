@@ -9,6 +9,7 @@
         <!-- begin van row -->
         <div class="row">
             <div class="order-lg-2 mb-3 mb-lg-0 col-lg-6 w-50 mx-auto">
+                <!-- begin van svg -->
                 <svg class="text-cyan-900" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="30ad16f1-5c99-460e-a21a-a10b3717755f" data-name="Layer 1" width="100%" height="100%" viewBox="0 0 1080 828.86">
                     <defs>
                         <linearGradient id="f6f637d9-5ca4-41bf-bc3b-5488ffc6e737" x1="733" y1="836.43" x2="733" y2="78.43" gradientUnits="userSpaceOnUse">
@@ -73,7 +74,10 @@
                     <circle cx="447" cy="228.86" r="5" fill="#fff" opacity="0.2"></circle>
                     <circle cx="464" cy="228.86" r="5" fill="#fff" opacity="0.2"></circle>
                     <circle cx="481" cy="228.86" r="5" fill="#fff" opacity="0.2"></circle>
+                    <!-- einde van svg -->
                 </svg>
+                
+                <!-- einde van div -->
             </div>
             <div class="order-lg-1 col-lg-6">
                 <div class="card rounded shadow p-3 p-md-4">
