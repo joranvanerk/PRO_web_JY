@@ -62,7 +62,51 @@ require PATH_LIB . "page-top.php";
             <input type="submit" name="submit1" value="Opslaan">
             <!-- <button type="submit" class="btn btn-primary">Opslaan</button> -->
           </form>
-        <div class="col6"></div>
+          <br>
+
+          <form action="" method="POST">
+            <div class="form-group">
+              <label for="titel">Card 2</label>
+              <input type="text" name="card2" class="form-control" id="card2" aria-describedby="firstnameHelp" value="<?php echo $record["card2"]; ?>">
+            </div>
+            <div class="form-group">
+              <label for="tekst">Card 2 tekst</label>
+              <input type="text" name="card2tekst" class="form-control" id="card2tekst" aria-describedby="lastnameHelp" value="<?php echo $record["card2tekst"]; ?>">
+            </div>
+            <input type="submit" name="submit2" value="Opslaan">
+            <!-- <button type="submit" class="btn btn-primary">Opslaan</button> -->
+          </form>
+          <br>
+
+          <form action="" method="POST">
+            <div class="form-group">
+              <label for="titel">Card 3</label>
+              <input type="text" name="card3" class="form-control" id="card3" aria-describedby="firstnameHelp" value="<?php echo $record["card3"]; ?>">
+            </div>
+            <div class="form-group">
+              <label for="tekst">Card 3 tekst</label>
+              <input type="text" name="card3tekst" class="form-control" id="card3tekst" aria-describedby="lastnameHelp" value="<?php echo $record["card3tekst"]; ?>">
+            </div>
+            <input type="submit" name="submit3" value="Opslaan">
+            <!-- <button type="submit" class="btn btn-primary">Opslaan</button> -->
+          </form>
+          <br>
+
+          <form action="" method="POST">
+            <div class="form-group">
+              <label for="titel">Card 4</label>
+              <input type="text" name="card4" class="form-control" id="card4" aria-describedby="firstnameHelp" value="<?php echo $record["card4"]; ?>">
+            </div>
+            <div class="form-group">
+              <label for="tekst">Card 4 tekst</label>
+              <input type="text" name="card4tekst" class="form-control" id="card4tekst" aria-describedby="lastnameHelp" value="<?php echo $record["card4tekst"]; ?>">
+            </div>
+            <input type="submit" name="submit4" value="Opslaan">
+            <!-- <button type="submit" class="btn btn-primary">Opslaan</button> -->
+          </form>
+          <br>
+          
+          <div class="col6"></div>
     </div>
   </main>
 </form>
@@ -92,11 +136,16 @@ require PATH_LIB . "page-top.php";
     $heading = $_POST["heading"];
     $card1 = $_POST["card1"];
     $card1tekst = $_POST["card1tekst"];
+    $card2 = $_POST["card2"];
+    $card2tekst = $_POST["card2tekst"];
+    $card3 = $_POST["card3"];
+    $card3tekst = $_POST["card3tekst"];
+    $card4 = $_POST["card4"];
+    $card4tekst = $_POST["card4tekst"];
 
     if(isset($_POST["submit"])){
       if($query = mysqli_query($connect,"UPDATE home SET titel='$titel', heading='$heading'")){
-          echo "Opgeslagen";
-          header( "refresh:2;url=home.php" );
+          echo "Opgeslagen (klik <a href='./home.php'>hier</a> om te herladen) <br>";
       }else{
           echo "Fout" . mysqli_error($connect);
       }
@@ -104,12 +153,35 @@ require PATH_LIB . "page-top.php";
 
   if(isset($_POST["submit1"])){
     if($query = mysqli_query($connect,"UPDATE home SET card1='$card1', card1tekst='$card1tekst'")){
-        echo "Opgeslagen";
+        echo "Opgeslagen (klik <a href='./home.php'>hier</a> om te herladen) <br>";
     }else{
         echo "Fout" . mysqli_error($connect);
     }
 }
 
+if(isset($_POST["submit2"])){
+  if($query = mysqli_query($connect,"UPDATE home SET card2='$card2', card2tekst='$card2tekst'")){
+      echo "Opgeslagen (klik <a href='./home.php'>hier</a> om te herladen) <br>";
+  }else{
+      echo "Fout" . mysqli_error($connect);
+  }
+}
+
+if(isset($_POST["submit3"])){
+  if($query = mysqli_query($connect,"UPDATE home SET card3='$card3', card3tekst='$card3tekst'")){
+      echo "Opgeslagen (klik <a href='./home.php'>hier</a> om te herladen) <br>";
+  }else{
+      echo "Fout" . mysqli_error($connect);
+  }
+}
+
+if(isset($_POST["submit4"])){
+  if($query = mysqli_query($connect,"UPDATE home SET card4='$card4', card4tekst='$card4tekst'")){
+      echo "Opgeslagen (klik <a href='./home.php'>hier</a> om te herladen) <br>";
+  }else{
+      echo "Fout" . mysqli_error($connect);
+  }
+}
 ?>
 <?php 
 
