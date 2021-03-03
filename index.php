@@ -1,3 +1,16 @@
+<?php include_once("./paneel/connect_db.php");
+
+    // alle resultaten uit de database home pakken
+    $sql = "SELECT * FROM `home`";
+
+    // de resultaten pakken
+    $result = mysqli_query($conn, $sql);
+
+    // alle resultaten in een variabele stoppen
+    $record = mysqli_fetch_assoc($result);
+    
+?>
+
 <html lang="en">
   <head>
     <!-- alle meta tags -->
@@ -7,8 +20,8 @@
     <?php include_once("./core/style.html") ?>
     <link rel="stylesheet" href="./core/css/main-core.css">
     <!-- Titel of deze website -->
-    <title>SPACEY</title>
-    
+    <title><?php echo $record["titel"]; ?></title>
+
   </head>
   <body>
   

@@ -8,9 +8,7 @@ require PATH_LIB . "page-top.php";
 ?>
 
 
-<?php include_once("./connect_db.php");?>
-
-<?php
+<?php include_once("./connect_db.php");
 
     $sql = "SELECT * FROM `home`";
 

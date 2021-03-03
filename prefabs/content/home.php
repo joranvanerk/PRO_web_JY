@@ -1,3 +1,16 @@
+<?php include_once("./paneel/connect_db.php");
+
+    // alle resultaten uit de database home pakken
+    $sql = "SELECT * FROM `home`";
+
+    // de resultaten pakken
+    $result = mysqli_query($conn, $sql);
+
+    // alle resultaten in een variabele stoppen
+    $record = mysqli_fetch_assoc($result);
+    
+?>
+
 <!-- home pagina -->
 <section class="fdb-block">
 <!-- begin van container -->
@@ -7,7 +20,7 @@
       <!-- div collumns -->
       <div class="col-12 col-md-7 col-xl-5">
       <!-- titel tekst -->
-        <h1 class="font-weight-bold text-cyan-900">SpaceY Sterrenkunde</h1>
+        <h1 class="font-weight-bold text-cyan-900"><?php echo $record["heading"]; ?></h1>
         <!-- banner tekst -->
         <p class="lead"> Welkom op de site van SpaceY. Hier zul je informatie vinden over de opleiding. Je kunt hier een spel vinden dat jou een beeld zal geven over de opleiding. Veel succes!</p>
         <!-- einde sluit div -->
@@ -29,9 +42,11 @@
       <!-- icon aan de header van de card -->
       <i class="fas fa-tags fa-3x pb-3"></i>
       <!-- De card titel -->
-      <h5 class="card-title">PRIJS</h5>
+      <!-- prijs -->
+      <!-- Wij hebben de beste prijzen voor de Kwaliteit dat je gaat krijgen bij ons. -->
+      <h5 class="card-title"><?php echo $record["card1"]; ?></h5>
       <!-- De card teksten inhoud -->
-      <p class="card-text" style="color: black;">Wij hebben de beste prijzen voor de Kwaliteit dat je gaat krijgen bij ons.</p>
+      <p class="card-text" style="color: black;"><?php echo $record["card1tekst"]; ?></p>
       <!-- De footer van de card -->
       <!-- <p class="card-text"><small class="text-muted">Pricing</small></p> -->
     </div>
@@ -43,9 +58,11 @@
       <!-- icon aan de header van de card -->
       <i class="fas fa-sliders-h fa-3x pb-3"></i>
       <!-- De card titel -->
-      <h5 class="card-title">KWALITEIT</h5>
+      <!-- kwaliteit -->
+      <!-- Wij hebben de beste leer methode opgezet voor de studenten voor het uiterste resultaat. -->
+      <h5 class="card-title"><?php echo $record["card2"]; ?></h5>
       <!-- De card teksten inhoud -->
-      <p class="card-text" style="color: black;">Wij hebben de beste leer methode opgezet voor de studenten voor het uiterste resultaat.</p>
+      <p class="card-text" style="color: black;"><?php echo $record["card2tekst"]; ?></p>
       <!-- De footer van de card -->
       <!-- <p class="card-text"><small class="text-muted">Quality</small></p> -->
     </div>
@@ -57,9 +74,11 @@
       <!-- icon aan de header van de card -->
       <i class="fas fa-adjust fa-3x pb-3"></i>
       <!-- De card titel -->
-      <h5 class="card-title">INTERACTIEF</h5>
+      <!-- interactief -->
+      <!-- Er is een spel voor jullie opgezet om een beeld te krijgen van de opleiding. -->
+      <h5 class="card-title"><?php echo $record["card3"]; ?></h5>
       <!-- De card teksten inhoud -->
-      <p class="card-text" style="color: black;">Er is een spel voor jullie opgezet om een beeld te krijgen van de opleiding.</p>
+      <p class="card-text" style="color: black;"><?php echo $record["card3tekst"]; ?></p>
       <!-- De footer van de card -->
       <!-- <p class="card-text"><small class="text-muted">Interactive</small></p> -->
     </div>
@@ -71,9 +90,11 @@
       <!-- icon aan de header van de card -->
       <i class="fas fa-space-shuttle fa-3x pb-3"></i>
       <!-- De card titel -->
-      <h5 class="card-title">PRAKTIJK</h5>
+      <!-- praktijk -->
+      <!-- Naast het theorie zullen jullie zeer zeker ook het praktijk krijgen voor een optimale ervaring om alles beter te begrijpen. -->
+      <h5 class="card-title"><?php echo $record["card4"]; ?></h5>
       <!-- De card teksten inhoud -->
-      <p class="card-text" style="color: black;">Naast het theorie zullen jullie zeer zeker ook het praktijk krijgen voor een optimale ervaring om alles beter te begrijpen.</p>
+      <p class="card-text" style="color: black;"><?php echo $record["card4tekst"]; ?></p>
       <!-- De footer van de card -->
       <!-- <p class="card-text"><small class="text-muted">Practice</small></p> -->
     <!-- einde pagina div -->
@@ -82,7 +103,7 @@
   </div>
 <!-- de laatste div sluiten -->
 </div>
-
+<br>
 <!-- de titel van de faq  -->
 <section class="accordion-section clearfix mt-3" aria-label="Question Accordions"> 
   <!-- het begin van de container  -->

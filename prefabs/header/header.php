@@ -49,7 +49,7 @@ if (isset($_GET["content"])) {
               <a class="navbar-item text-white <?php if ( $active == "game" || $active == "" ) { echo "text-muted"; }?>" style="padding-right: 20px;" href='./index.php?content=game'>game</a>
               <!-- de login knop -->
               <!-- met linkje -->
-              <a href="login.php">
+              <a href="paneel">
               <button type="button" class="btn btn-primary">login</button></a>
               <!-- een sluit tag van column 6 -->
             </col-6>
