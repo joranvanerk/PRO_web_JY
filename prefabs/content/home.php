@@ -83,10 +83,13 @@
 <!-- de laatste div sluiten -->
 </div>
 
-<section class="accordion-section clearfix mt-3" aria-label="Question Accordions">
+<!-- de titel van de faq  -->
+<section class="accordion-section clearfix mt-3" aria-label="Question Accordions"> 
+  <!-- het begin van de container  -->
   <div class="container">
-  
+    <!-- de titel van de faq  -->
 	  <h2 class="font-weight-bold text-cyan-900" style="text-align: center;">Frequently Asked Questions </h2>
+    <!-- Het begin van de accordion -->
 	  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 		<div class="panel panel-default">
 		  <div class="panel-heading p-3 mb-3" role="tab" id="heading0">
