@@ -7,7 +7,7 @@
       <!-- div collumns -->
       <div class="col-12 col-md-7 col-xl-5">
       <!-- titel tekst -->
-        <h1>SpaceY Sterrenkunde</h1>
+        <h1 class="font-weight-bold text-cyan-900">SpaceY Sterrenkunde</h1>
         <!-- banner tekst -->
         <p class="lead"> Welkom op de site van SpaceY. Hier zul je informatie vinden over de opleiding. Je kunt hier een spel vinden dat jou een beeld zal geven over de opleiding. Veel succes!</p>
         <!-- einde sluit div -->
@@ -82,3 +82,72 @@
   </div>
 <!-- de laatste div sluiten -->
 </div>
+
+<section class="accordion-section clearfix mt-3" aria-label="Question Accordions">
+  <div class="container">
+  
+	  <h2 class="font-weight-bold text-cyan-900" style="text-align: center;">Frequently Asked Questions </h2>
+	  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="panel panel-default">
+		  <div class="panel-heading p-3 mb-3" role="tab" id="heading0">
+			<h3 class="panel-title">
+			  <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse0" aria-expanded="true" aria-controls="collapse0">
+				Q: Wat zijn de eisen?
+			  </a>
+			</h3>
+		  </div>
+		  <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
+			<div class="panel-body px-3 mb-4">
+			  <p>De eisen voor de sterrenkunde opleiding voor ruimtevaart en ruimteonderzoek zijn het bezitten van een gezond en functioneel lichaam zonder gebreken. Probeer bij het <a href="./index.php?content=aanmelden" class="label label-success">aanmelden</a> zo volledig mogelijk alle velden in te vullen en wees erlijk, de opleiding is erg specifiek en ingewikkeld.</p>
+			</div>
+		  </div>
+		</div>
+		
+		<div class="panel panel-default">
+		  <div class="panel-heading p-3 mb-3" role="tab" id="heading1">
+			<h3 class="panel-title">
+			  <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+				Q: Waarom SpaceY?
+			  </a>
+			</h3>
+		  </div>
+		  <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+			<div class="panel-body px-3 mb-4">
+			  <p>Bij SpaceY bieden wij een complete opleiding en een toekomstplan, wij bieden de complete opleiding voor de ruimtevaart in sterrenkunde.</p>
+			</div>
+		  </div>
+		</div>
+		
+		<div class="panel panel-default">
+		  <div class="panel-heading p-3 mb-3" role="tab" id="heading2">
+			<h3 class="panel-title">
+			  <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+				Q: Wat kost het?
+			  </a>
+			</h3>
+		  </div>
+		  <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+			<div class="panel-body px-3 mb-4">
+			  <p>Bij de opleiding sterrenkunde binnen SpaceY liggen de prijzen verschilend tussen €95.000,- en €210.000,-</p>
+			</div>
+		  </div>
+		</div>
+		
+		<div class="panel panel-default">
+		  <div class="panel-heading p-3 mb-3" role="tab" id="heading3">
+			<h3 class="panel-title">
+			  <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3">
+				Q: Waar kan ik mezelf aanmelden?
+			  </a>
+			</h3>
+		  </div>
+		  <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+			<div class="panel-body px-3 mb-4">
+			  <p>We hopen jouw applicatie zo snel mogelijk te kunnen beoordelen, meld jezelf aan via <a href="./index.php?content=aanmelden" class="label label-success">aanmelden</a>, wil je weten of de opleiding iets voor je is? Speel onze <a href="./index.php?content=game" class="label label-success">game</a> </p>
+			</div>
+		  </div>
+		</div>
+	  </div>
+  
+  </div>
+</section>
