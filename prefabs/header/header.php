@@ -18,8 +18,6 @@ if (isset($_GET["content"])) {
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- MDBootstrap css -->
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Google Fonts -->
@@ -55,7 +53,7 @@ if (isset($_GET["content"])) {
               <a class="navbar-item text-white <?php if ( $active == "game" || $active == "" ) { echo "text-muted"; }?>" style="padding-right: 20px;" href='./index.php?content=game'>game</a>
               <!-- de login knop -->
               <!-- met linkje -->
-              <a href="#">
+              <a href="login.php">
               <button type="button" class="btn btn-primary">login</button></a>
               <!-- een sluit tag van column 6 -->
             </col-6>
