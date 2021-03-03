@@ -6,9 +6,19 @@ require __DIR__ . DIRECTORY_SEPARATOR . "lib" . DIRECTORY_SEPARATOR . "core.php"
 // require PATH_LIB . "page-top.php";
 require PATH_LIB . "page-top.php";
 ?>
-<?php include_once("..//..//..//core/style.html") ?>
 
-<?php include_once("./connect_db.php")?>
+
+<?php include_once("./connect_db.php");?>
+
+<?php
+
+    $sql = "SELECT * FROM `home`";
+
+    $result = mysqli_query($conn, $sql);
+
+    $record = mysqli_fetch_assoc($result);
+    
+?>
 
 <!doctype html>
 <html lang="en">
@@ -22,7 +32,44 @@ require PATH_LIB . "page-top.php";
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   </head>
   <body>
-  <iframe src="./home_frame.php" frameborder="0" height="500" width="1000"></iframe>
+  <div class="container-fluid">
+  <main class="container">
+    </div>
+        <div class="col6">
+          <form action="" method="POST">
+            <div class="form-group">
+              <label for="titel">Titel</label>
+              <input type="text" name="titel" class="form-control" id="titel" aria-describedby="firstnameHelp" value="<?php echo $record["titel"]; ?>">
+            </div>
+            <div class="form-group">
+              <label for="tekst">Heading</label>
+              <input type="text" name="heading" class="form-control" id="heading" aria-describedby="lastnameHelp" value="<?php echo $record["heading"]; ?>">
+            </div>
+            <input type="submit" name="submit" value="Opslaan">
+            <!-- <button type="submit" class="btn btn-primary">Opslaan</button> -->
+          </form>
+          <br>
+
+          <form action="" method="POST">
+            <div class="form-group">
+              <label for="titel">Card 1</label>
+              <input type="text" name="card1" class="form-control" id="card1" aria-describedby="firstnameHelp" value="<?php echo $record["card1"]; ?>">
+            </div>
+            <div class="form-group">
+              <label for="tekst">Card 1 tekst</label>
+              <input type="text" name="card1tekst" class="form-control" id="card1tekst" aria-describedby="lastnameHelp" value="<?php echo $record["card1tekst"]; ?>">
+            </div>
+            <input type="submit" name="submit1" value="Opslaan">
+            <!-- <button type="submit" class="btn btn-primary">Opslaan</button> -->
+          </form>
+        <div class="col6"></div>
+    </div>
+  </main>
+</form>
+
+
+
+
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="./js/app.js"></script>
@@ -37,4 +84,33 @@ require PATH_LIB . "page-top.php";
     -->
   </body>
 </html>
-<?php require PATH_LIB . "page-bottom.php"; ?>
+
+<?php
+    require('connect_db.php');
+
+    $titel = $_POST["titel"];
+    $heading = $_POST["heading"];
+    $card1 = $_POST["card1"];
+    $card1tekst = $_POST["card1tekst"];
+
+    if(isset($_POST["submit"])){
+      if($query = mysqli_query($connect,"UPDATE home SET titel='$titel', heading='$heading'")){
+          echo "Opgeslagen";
+          header( "refresh:2;url=home.php" );
+      }else{
+          echo "Fout" . mysqli_error($connect);
+      }
+  }
+
+  if(isset($_POST["submit1"])){
+    if($query = mysqli_query($connect,"UPDATE home SET card1='$card1', card1tekst='$card1tekst'")){
+        echo "Opgeslagen";
+    }else{
+        echo "Fout" . mysqli_error($connect);
+    }
+}
+
+?>
+<?php 
+
+require PATH_LIB . "page-bottom.php"; ?>

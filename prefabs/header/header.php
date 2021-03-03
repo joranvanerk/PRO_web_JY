@@ -6,13 +6,9 @@ if (isset($_GET["content"])) {
     // anders
 }else {
     // de content variabele leeg zetten
-    $active = "";
+    $active = "home";
 }
 ?>
-
-
-
-
 <html lang="en">
   <head>
     <!-- Required meta tags -->
