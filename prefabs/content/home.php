@@ -91,12 +91,18 @@
 	  <h2 class="font-weight-bold text-cyan-900" style="text-align: center;">Frequently Asked Questions </h2>
     <!-- Het begin van de accordion -->
 	  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <!-- Het begin van een panneel -->
 		<div class="panel panel-default">
+      <!-- De titel van de paneel -->
 		  <div class="panel-heading p-3 mb-3" role="tab" id="heading0">
+      <!-- de titel zelf -->
 			<h3 class="panel-title">
+        <!-- de titel met link -->
 			  <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse0" aria-expanded="true" aria-controls="collapse0">
 				Q: Wat zijn de eisen?
+        <!-- Het einde van de titel zelf -->
 			  </a>
+      <!-- einde van de titel -->
 			</h3>
 		  </div>
 		  <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
