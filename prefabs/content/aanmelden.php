@@ -1,9 +1,9 @@
-</section>
 <h2 class="font-weight-bold text-cyan-900" style="text-align: center;">
                     <!-- titel tekst -->
                     Aanmelden voor de opleiding sterrenkunde bij SpaceY
                 </h2>
 <section class="h-100">
+
     <!-- begin container -->
     <div class="container py-5">
         <!-- begin van row -->
@@ -79,6 +79,8 @@
                 
                 <!-- einde van div -->
             </div>
+            <!-- snel inladen van bootstrap en core-css -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
             <div class="order-lg-1 col-lg-6">
                 <div class="card rounded shadow p-3 p-md-4">
                     <h3 class="text-center font-weight-bold text-cyan-900">
@@ -90,11 +92,11 @@
                         Vul het formulier zo volledig mogelijk in!
                     </p>
                     <!-- aanmeld form -->
-                    <form action="">
+                    <form action="./index.php?content=aanmelden" method="POST">
                         <div class="mb-3">
                             <!-- label tekst -->
-                            <label for="name" class="form-label">Naam</label>
-                            <input type="text" class="form-control" name="name" id="name" placeholder="Jan broekel">
+                            <label for="naam" class="form-label">Naam</label>
+                            <input type="text" class="form-control" name="naam" id="naam" placeholder="Jan broekel">
                         </div>
                         <div class="mb-3">
                             <!-- label tekst -->
@@ -103,12 +105,11 @@
                         </div>
                         <div class="mb-3">
                             <!-- label tekst -->
-                            <label for="message" class="form-label">Motivatie</label>
-                            <textarea class="form-control" name="message" id="message" cols="30" rows="6" placeholder="Ik zou graag willen deelnemen aan deze opleiding, want.."></textarea>
+                            <label for="motivatie" class="form-label">Motivatie</label>
+                            <textarea class="form-control" name="motivatie" id="motivatie" cols="30" rows="6" placeholder="Ik zou graag willen deelnemen aan deze opleiding, want.."></textarea>
                         </div>
                         <div class="btn btn-block btn-cyan-900">
-                            <!-- tekst -->
-                            Verzenden
+                        <input type="submit" name="submit" value="Verzenden">
                         </div>
                     </form>
                 </div>
@@ -234,3 +235,35 @@
     </div>
 </section>
 <!-- einde sectie -->
+
+<?php
+
+$datum = date("d-m-Y G:i");
+
+// schoonmaken
+function cleaning($raw_data) {
+    global $conn;
+    $data = mysqli_real_escape_string($conn, $raw_data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+
+
+if(isset($_POST["naam"])){
+    $motivatie = cleaning($_POST["motivatie"]);
+    $naam = cleaning($_POST["naam"]);
+    $email = cleaning($_POST["email"]);
+}
+
+// kijken naar een submit
+if(isset($_POST["submit"])){
+    // als de query er is dan uitvoeren
+    if($query = mysqli_query($connect,"INSERT INTO `pro_aanmeldingen` (`id`, `naam`, `email`, `motivatie`, `datum`) VALUES (NULL, '$naam', '$email', '$motivatie', '$datum');")){
+      // melden dat het is opgeslagen en refreshen
+    }else{
+        // en anders melden dat er een fout is
+        echo "Fout" . mysqli_error($connect);
+    }
+}
+
+?>
