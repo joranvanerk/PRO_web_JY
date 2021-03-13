@@ -1,7 +1,7 @@
 <?php include_once("./paneel/connect_db.php");
 
     // alle resultaten uit de database home pakken
-    $sql = "SELECT * FROM `home`";
+    $sql = "SELECT * FROM `pro_home`";
 
     // de resultaten pakken
     $result = mysqli_query($conn, $sql);
