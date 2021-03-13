@@ -11,13 +11,13 @@ $_USR = new Users();
 switch ($_POST['req']) {
   // een request is niet juist
   default:
-    echo "INVALID REQUEST";
+    echo "Onebekend verzoek";
     break;
 
   // alle gebruikers
   case "list":
     $users = $_USR->getAll(); ?>
-    <h1>MANAGE USERS</h1>
+    <h1>Gebruikersbeheer</h1>
     <input type="button" value="Gebruiker toevoegen" onclick="usr.addEdit()"/>
     <?php
     if (is_array($users)) {
