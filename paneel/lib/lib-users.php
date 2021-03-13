@@ -27,8 +27,8 @@ class Users {
   function get ($id) {
     // (C1) SQL QUERY
     $sql = is_numeric($id) 
-      ? "SELECT * FROM `users` WHERE `user_id`=?"
-      : "SELECT * FROM `users` WHERE `user_email`=?" ;
+      ? "SELECT * FROM `pro_users` WHERE `user_id`=?"
+      : "SELECT * FROM `pro_users` WHERE `user_email`=?" ;
 
     // (C2) GET USER
     $this->stmt = $this->pdo->prepare($sql);
@@ -39,7 +39,7 @@ class Users {
 
   // (D) GET ALL USERS
   function getAll () {
-    $this->stmt = $this->pdo->prepare("SELECT * FROM `users`");
+    $this->stmt = $this->pdo->prepare("SELECT * FROM `pro_users`");
     $this->stmt->execute();
     $entry = $this->stmt->fetchAll();
     return count($entry)==0 ? false : $entry ;
@@ -75,8 +75,8 @@ class Users {
   function save ($email, $name, $password, $id=null) {
     // (F1) SQL + DATA
     $sql = $id===null
-      ? "INSERT INTO `users` (`user_email`, `user_name`, `user_password`) VALUES (?, ?, ?)"
-      : "UPDATE `users` SET `user_email`=?, `user_name`=?, `user_password`=? WHERE `user_id`=?" ;
+      ? "INSERT INTO `pro_users` (`user_email`, `user_name`, `user_password`) VALUES (?, ?, ?)"
+      : "UPDATE `pro_users` SET `user_email`=?, `user_name`=?, `user_password`=? WHERE `user_id`=?" ;
     $data = [$email, $name, password_hash($password, PASSWORD_DEFAULT)];
     if ($id!==null) { $data[] = $id; }
     
@@ -94,7 +94,7 @@ class Users {
   // (G) DELETE USER
   function del ($id) {
     try {
-      $this->stmt = $this->pdo->prepare("DELETE FROM `users` WHERE `user_id`=?");
+      $this->stmt = $this->pdo->prepare("DELETE FROM `pro_users` WHERE `user_id`=?");
       $this->stmt->execute([$id]);
       return true;
     } catch (Exception $ex) {
