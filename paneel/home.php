@@ -180,7 +180,7 @@ require PATH_LIB . "page-top.php";
       if($query = mysqli_query($connect,"UPDATE pro_home SET titel='$titel', heading='$heading'")){
         // melden dat het is opgeslagen en refreshen
           echo "Opgeslagen <br>";
-          echo '<meta http-equiv="refresh" content="0; url=home">';
+          echo '<meta http-equiv="refresh" content="0; url=home.php">';
       }else{
           // en anders melden dat er een fout is
           echo "Fout" . mysqli_error($connect);
@@ -193,7 +193,7 @@ require PATH_LIB . "page-top.php";
     if($query = mysqli_query($connect,"UPDATE pro_home SET card1='$card1', card1tekst='$card1tekst'")){
       // melden dat het is opgeslagen en refreshen
         echo "Opgeslagen <br>";
-        echo '<meta http-equiv="refresh" content="0; url=home">';
+        echo '<meta http-equiv="refresh" content="0; url=home.php">';
     }else{
         // en anders melden dat er een fout is
         echo "Fout" . mysqli_error($connect);
@@ -206,7 +206,7 @@ if(isset($_POST["submit2"])){
   if($query = mysqli_query($connect,"UPDATE home SET card2='$card2', card2tekst='$card2tekst'")){
     // melden dat het is opgeslagen en refreshen
       echo "Opgeslagen <br>";
-      echo '<meta http-equiv="refresh" content="0; url=home">';
+      echo '<meta http-equiv="refresh" content="0; url=home.php">';
   }else{
       // en anders melden dat er een fout is
       echo "Fout" . mysqli_error($connect);
@@ -219,7 +219,7 @@ if(isset($_POST["submit3"])){
   if($query = mysqli_query($connect,"UPDATE pro_home SET card3='$card3', card3tekst='$card3tekst'")){
     // melden dat het is opgeslagen en refreshen
       echo "Opgeslagen <br>";
-      echo '<meta http-equiv="refresh" content="0; url=home">';
+      echo '<meta http-equiv="refresh" content="0; url=home.php">';
   }else{
       // en anders melden dat er een fout is
       echo "Fout" . mysqli_error($connect);
@@ -232,7 +232,7 @@ if(isset($_POST["submit4"])){
   if($query = mysqli_query($connect,"UPDATE pro_home SET card4='$card4', card4tekst='$card4tekst'")){
       // melden dat het is opgeslagen en refreshen
       echo "Opgeslagen <br>";
-      echo '<meta http-equiv="refresh" content="0; url=home">';
+      echo '<meta http-equiv="refresh" content="0; url=home.php">';
   }else{
       // en anders melden dat er een fout is
       echo "Fout" . mysqli_error($connect);
