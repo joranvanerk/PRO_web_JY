@@ -1,4 +1,4 @@
-<h2 class="font-weight-bold text-cyan-900" style="text-align: center;">
+<h2 class="font-weight-bold text-cyan-900" style="text-align: center; padding-top: 40px">
                     <!-- titel tekst -->
                     Aanmelden voor de opleiding sterrenkunde bij SpaceY
                 </h2>
