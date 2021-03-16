@@ -242,14 +242,19 @@ $datum = date("d-m-Y G:i");
 
 // schoonmaken
 function cleaning($raw_data) {
+    // globale connectie opzetten
     global $conn;
+    // schoonmaken
     $data = mysqli_real_escape_string($conn, $raw_data);
+    // alle speciale karakters verschonen
     $data = htmlspecialchars($data);
+    // data terugsturen
     return $data;
 }
 
 
 if(isset($_POST["naam"])){
+    // alle post waarden ophalen en indelen
     $motivatie = cleaning($_POST["motivatie"]);
     $naam = cleaning($_POST["naam"]);
     $email = cleaning($_POST["email"]);
