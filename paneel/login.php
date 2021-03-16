@@ -1,4 +1,3 @@
-<div id="bodyid">
 <?php
 //login
 require __DIR__ . DIRECTORY_SEPARATOR . "lib" . DIRECTORY_SEPARATOR . "core.php";
@@ -38,10 +37,12 @@ function login () {
       }
     </style>
     <!-- het login formulier zelf( -->
+    <div>
     <form id="login-form" onsubmit="return login();">
       <h1>Inloggen</h1>
       <input type="email" placeholder="Email" id="user_email" required />
       <input type="password" placeholder="Password" id="user_password" required />
       <input type="submit" value="Sign In"/>
     </form>
+    </div>
 <?php require PATH_LIB . "page-bottom.php"; ?>
