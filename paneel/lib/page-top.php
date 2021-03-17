@@ -33,6 +33,14 @@ if (!$_ADMIN && basename($_SERVER["SCRIPT_FILENAME"], '.php')!="login") {
     <?php if ($_ADMIN) { ?>
     <!-- zijbalk -->
     <nav id="page-sidebar">
+    <!-- paneel titel -->
+    <a style="color: white; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px;">Paneel</a>
+    <br>
+    <!-- link aanmaken -->
+    <a href="./index.php">
+        <!-- home tekst met icoon -->
+        <span class="fa ico">&#xf144;</span> Start
+      </a>
       <!-- link aanmaken -->
       <a href="users.php">
         <!-- gebruikersbeheer tekst met icoon -->
@@ -46,7 +54,7 @@ if (!$_ADMIN && basename($_SERVER["SCRIPT_FILENAME"], '.php')!="login") {
       <!-- link aanmaken -->
       <a href="./aanmeldingen.php">
         <!-- aanmeldingewn tekst met icoon -->
-        <span class="fa ico">&#xf0c2;</span> Aanmeldingen
+        <span class="fa ico">&#xf15b;</span> Aanmeldingen
       </a>
     </nav>
     <?php } ?>
