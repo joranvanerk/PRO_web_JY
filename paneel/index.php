@@ -82,15 +82,22 @@ $countaanresult = mysqli_fetch_array($resultcountaan);
   </div>
 </div>
 <!-- einde van div class -->
+<!-- wat spacing -->
   <br>
+  <!-- het begin van de card -->
   <div class="card">
+  <!-- de card header met custom style -->
   <div class="card-header" style="text-align: center;">
     SpaceY 
   </div>
+  <!-- een list groep item -->
   <ul class="list-group list-group-flush">
+    <!-- het item van de list groep zelf met custom styling -->
     <li class="list-group-item" style="text-align: center;">Beheerder paneel SpaceY, mist u informatie? Vul dan de home pagina zo volledig mogelijk in door in het linker paneel naar home te navigeren!<br> Voor nieuwe aanmeldingen van de opleiding sterrenkunde, navigeer naar Aanmeldingen.</li>
   </ul>
+  <!-- einde div -->
 </div>
+<!-- einde pagina div -->
 </div>
 
 <?php require PATH_LIB . "page-bottom.php"; ?>
