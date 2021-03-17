@@ -8,7 +8,26 @@
 
     // alle resultaten in een variabele stoppen
     $record = mysqli_fetch_assoc($result);
-    
+
+    $ip =  $_SERVER['REMOTE_ADDR'];
+
+    $date = date("Y/m/d");
+
+    $sqlcheck = "SELECT * FROM `pro_statusertrack` WHERE `ip` = '$ip' AND `date` = '$date'";
+
+    $results = mysqli_query($conn, $sqlcheck);
+
+    if (mysqli_num_rows($results)){
+    }else {
+
+      $ip =  $_SERVER['REMOTE_ADDR'];
+
+      $date = date("Y/m/d");
+
+      $sqlt = "INSERT INTO `pro_statusertrack` (`ip`, `date`) VALUES ('$ip', '$date');";
+
+      mysqli_query($conn, $sqlt);
+    }
 ?>
 
 <html lang="en">
