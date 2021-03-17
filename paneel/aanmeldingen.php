@@ -51,7 +51,7 @@ require PATH_LIB . "page-top.php";
   <!-- het begin van de body -->
   <body>
   <!-- een container voor de aanmeldingen -->
-  <main class="container">
+  <main class="container-fluid">
     <div class="col2">
     <!-- Op deze plek komt de tabel -->
     <table class="table table-hover">
