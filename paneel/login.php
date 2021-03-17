@@ -1,7 +1,36 @@
 <?php
 //login
 require __DIR__ . DIRECTORY_SEPARATOR . "lib" . DIRECTORY_SEPARATOR . "core.php";
-require PATH_LIB . "page-top.php"; ?>
+require PATH_LIB . "page-top.php"; 
+
+
+
+
+
+
+// $ip =  $_SERVER['REMOTE_ADDR'];
+
+// $date = date("Y/m/d");
+
+// $sql = "SELECT * FROM `pro_statusertrack` WHERE `ip` = '$ip' AND `date` = '$date'";
+
+// $result = mysqli_query($conn, $sql);
+
+// if (mysqli_num_rows($result)){
+// }else {
+
+//   $ip =  $_SERVER['REMOTE_ADDR'];
+
+//   $date = date("Y/m/d");
+
+//   $sql = "INSERT INTO `pro_statusertrack` (`ip`, `date`) VALUES ('$ip', '$date');";
+
+
+
+
+
+
+?>
 
 <!-- javascript sessie aanmaken -->
 <script>
