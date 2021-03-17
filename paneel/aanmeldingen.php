@@ -105,8 +105,10 @@ require PATH_LIB . "page-top.php";
 </html>
 
 <?php
+    // de database zoeken en connecten
     require('connect_db.php');
 
+    // kijken of delete is aangeroepen
     if (isset($_GET["delete"])) {
       $id = $_GET["delete"];
   }
@@ -123,7 +125,7 @@ if (isset($_GET["delete"])) {
   // de query uitvoeren richting de database
   mysqli_query($connect, $blockaan);
   // de pagina verversen zodat alle resultaten up-to-date zijn
-  echo '<meta http-equiv="refresh" content="0; url=aanmeldingen">';
+  echo '<meta http-equiv="refresh" content="0; url=aanmeldingen.php">';
 };
 
 // het einde van de pagina
