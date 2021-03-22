@@ -3,7 +3,7 @@
     // alle resultaten uit de database home pakken
     $sql = "SELECT * FROM `pro_home`";
 
-    // de resultaten pakken
+    // de resultaten pakken van de database
     $result = mysqli_query($conn, $sql);
 
     // alle resultaten in een variabele stoppen
