@@ -82,7 +82,8 @@
             <!-- snel inladen van bootstrap en core-css -->
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
             <div class="order-lg-1 col-lg-6">
-                <div class="card rounded shadow p-3 p-md-4">
+                <div class="card rounded shadow p-md-4">
+                    <?php include_once("melding.php"); ?>
                     <h3 class="text-center font-weight-bold text-cyan-900">
                         <!-- tekst -->
                         Aanmelden
@@ -253,22 +254,23 @@ function cleaning($raw_data) {
 }
 
 
-if(isset($_POST["naam"])){
+if(isset($_POST["email"])){
     // alle post waarden ophalen en indelen
     $motivatie = cleaning($_POST["motivatie"]);
     $naam = cleaning($_POST["naam"]);
     $email = cleaning($_POST["email"]);
+    if(isset($_POST["submit"])){
+        // als de query er is dan uitvoeren
+        if($query = mysqli_query($connect,"INSERT INTO `pro_aanmeldingen` (`id`, `naam`, `email`, `motivatie`, `datum`) VALUES (NULL, '$naam', '$email', '$motivatie', '$datum');")){
+          // melden dat het is opgeslagen en refreshen
+        }else{
+            // en anders melden dat er een fout is
+            echo "Fout" . mysqli_error($connect);
+        }
+    }
+} else {
+    header("location: ./index.php?content=aanmelden&alert=GeenEmail");
 }
 
-// kijken naar een submit
-if(isset($_POST["submit"])){
-    // als de query er is dan uitvoeren
-    if($query = mysqli_query($connect,"INSERT INTO `pro_aanmeldingen` (`id`, `naam`, `email`, `motivatie`, `datum`) VALUES (NULL, '$naam', '$email', '$motivatie', '$datum');")){
-      // melden dat het is opgeslagen en refreshen
-    }else{
-        // en anders melden dat er een fout is
-        echo "Fout" . mysqli_error($connect);
-    }
-}
 
 ?>
