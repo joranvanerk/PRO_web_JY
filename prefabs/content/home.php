@@ -11,6 +11,37 @@
     
 ?>
 
+<style>
+
+#bgra{
+  border-radius: 20px; 
+  background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+  transition-duration: 1s;
+}
+
+#bgra:hover{
+  border-radius: 40px; 
+  background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+  transition-duration: 1s;
+  transform: rotate(5deg);
+}
+
+#imgundraw {
+  width: 550;
+  height: 550;
+  transition: 1s;
+  padding: 10px;
+}
+
+#imgundraw:hover {
+  width: 550;
+  height: 550;
+  transition: 1s;
+  padding: 0px;
+}
+
+</style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <!-- home pagina -->
 <section class="fdb-block">
 <!-- begin van container -->
@@ -28,7 +59,7 @@
       <!-- de div met collumns en responsive -->
       <div class="col-12 col-sm-6 col-md-4 m-sm-auto mr-md-0 ml-md-auto pt-4 pt-md-0">
       <!-- nieuwe undraw svg -->
-      <img src="./img/undraw_Outer_space_drqu.svg" height="500" width="500" alt="">
+      <img src="./img/undraw_Outer_space_drqu.svg" alt="" id="imgundraw">
       </div>
     </div>
   </div>
@@ -36,7 +67,7 @@
 <!-- de card-groep -->
 <div class="card-group" style="margin-right: 5%; margin-left: 5%; border-radius: 20px;">
 <!-- simpele card -->
-  <div class="card m-5" style="border-radius: 20px; background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%)">
+  <div class="card m-5" id="bgra">
   <!-- card body met daaronder de inhoud -->
     <div class="card-body">
       <!-- icon aan de header van de card -->
@@ -52,7 +83,7 @@
     </div>
   </div>
   <!-- simpele card -->
-  <div class="card m-5" style="border-radius: 20px; background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%)">
+  <div class="card m-5" id="bgra">
   <!-- card body met daaronder de inhoud -->
     <div class="card-body">
       <!-- icon aan de header van de card -->
@@ -68,7 +99,7 @@
     </div>
   </div>
   <!-- simpele card -->
-  <div class="card m-5" style="border-radius: 20px; background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%)">
+  <div class="card m-5" id="bgra">
   <!-- card body met daaronder de inhoud -->
     <div class="card-body">
       <!-- icon aan de header van de card -->
@@ -84,7 +115,7 @@
     </div>
   </div>
   <!-- simpele card -->
-  <div class="card m-5" style="border-radius: 20px; background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%)">
+  <div class="card m-5" id="bgra">
   <!-- card body met daaronder de inhoud -->
     <div class="card-body">
       <!-- icon aan de header van de card -->
