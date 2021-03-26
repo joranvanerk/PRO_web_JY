@@ -82,8 +82,7 @@
             <!-- snel inladen van bootstrap en core-css -->
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
             <div class="order-lg-1 col-lg-6">
-                <div class="card rounded shadow p-md-4">
-                    <?php include_once("melding.php"); ?>
+                <div class="card rounded shadow p-3 p-md-4">
                     <h3 class="text-center font-weight-bold text-cyan-900">
                         <!-- tekst -->
                         Aanmelden
@@ -93,6 +92,7 @@
                         Vul het formulier zo volledig mogelijk in!
                     </p>
                     <!-- aanmeld form -->
+                    <?php include("melding.php"); ?>
                     <form action="./index.php?content=aanmelden" method="POST">
                         <div class="mb-3">
                             <!-- label tekst -->
@@ -102,7 +102,7 @@
                         <div class="mb-3">
                             <!-- label tekst -->
                             <label for="email" class="form-label">Email</label>
-                            <input type="text" class="form-control" name="email" id="email" placeholder="jan.broekel@gmail.com">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="jan.broekel@gmail.com" value="">
                         </div>
                         <div class="mb-3">
                             <!-- label tekst -->
@@ -243,34 +243,36 @@ $datum = date("d-m-Y G:i");
 
 // schoonmaken
 function cleaning($raw_data) {
-    // globale connectie opzetten
     global $conn;
-    // schoonmaken
     $data = mysqli_real_escape_string($conn, $raw_data);
-    // alle speciale karakters verschonen
     $data = htmlspecialchars($data);
-    // data terugsturen
     return $data;
 }
 
-
-if(isset($_POST["email"])){
-    // alle post waarden ophalen en indelen
-    $motivatie = cleaning($_POST["motivatie"]);
-    $naam = cleaning($_POST["naam"]);
-    $email = cleaning($_POST["email"]);
-    if(isset($_POST["submit"])){
-        // als de query er is dan uitvoeren
-        if($query = mysqli_query($connect,"INSERT INTO `pro_aanmeldingen` (`id`, `naam`, `email`, `motivatie`, `datum`) VALUES (NULL, '$naam', '$email', '$motivatie', '$datum');")){
-          // melden dat het is opgeslagen en refreshen
-        }else{
-            // en anders melden dat er een fout is
-            echo "Fout" . mysqli_error($connect);
-        }
-    }
+if (empty($_POST["email"]) && isset($_POST["submit"])) {
+    echo '<meta http-equiv="refresh" content="0; URL=./index.php?content=aanmelden&alert=GeenEmail">';
 } else {
-    header("location: ./index.php?content=aanmelden&alert=GeenEmail");
+    if(isset($_POST["submit"])){
+        $motivatie = cleaning($_POST["motivatie"]);
+        $naam = cleaning($_POST["naam"]);
+        $email = cleaning($_POST["email"]);
+        $sql = "INSERT INTO `pro_aanmeldingen` (`id`, `naam`, `email`, `motivatie`, `datum`) VALUES (NULL, '$naam', '$email', '$motivatie', '$datum');";
+        mysqli_query($connect, $sql); 
+        echo '<meta http-equiv="refresh" content="0; URL=./index.php?content=aanmelden&alert=AanmeldingGelukt">';
+    }
 }
 
 
+
+
+
+    
+// $motivatie = cleaning($_POST["motivatie"]);
+// $naam = cleaning($_POST["naam"]);
+// $email = cleaning($_POST["email"]);
+
+// header("location: ../../index.php?content=home&alert=GeenEmail");
+
+// $sql = "INSERT INTO `pro_aanmeldingen` (`id`, `naam`, `email`, `motivatie`, `datum`) VALUES (NULL, '$naam', '$email', '$motivatie', '$datum');";
+// mysqli_query($connect, $sql); 
 ?>
