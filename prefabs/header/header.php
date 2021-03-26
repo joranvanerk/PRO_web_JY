@@ -24,6 +24,21 @@ if (isset($_GET["content"])) {
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
     <!-- eigen css header -->
   </head>
+  <style>
+  
+#logoani {
+  height: 75;
+  transition: 0.5s;
+}
+
+#logoani:hover {
+  margin-left: 5px;
+  transition: 0.5s;
+}
+
+
+  
+  </style>
   <body>
 
 <!-- Dit is de script om de header te laten werken -->
@@ -34,7 +49,7 @@ if (isset($_GET["content"])) {
     <div class="container-fluid">
       <col-6>
       <!-- het logo links bovenin -->
-        <a href="./index.php?content=home"><img class="navbar-brand" src="./img/logo.png" style="height: 75; margin-top: -17;"></img></a>
+        <a href="./index.php?content=home"><img class="navbar-brand" src="./img/logo.png" style="margin-top: -17;" id="logoani"></img></a>
       </col-6>
         <form class="d-flex input-group w-auto">
         <!-- een navbar item -->
