@@ -9,12 +9,12 @@
           </div>';
         break;
         case "DatabaseFout" :
-            echo '<div class="alert alert-primary mt-5 w-50" role="alert">
+            echo '<div class="alert alert-primary mt-5" role="alert">
             Er is een fout opgetreden tijdens het versturen, contacteer een administrator!
           </div>';
         break;
         case "OnbekendeFout" :
-            echo '<div class="alert alert-primary mt-5 w-50" role="alert">
+            echo '<div class="alert alert-primary mt-5" role="alert">
             Er is een onbekende fout opgetreden, probeer het later nogmaals!
           </div>';
         break;
