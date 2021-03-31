@@ -1,7 +1,21 @@
+<?php
+
+// de query voor aantal aanmeldingen
+$countaan = "SELECT COUNT(*) FROM pro_aanmeldingen;";
+
+// de query uitvoeren
+$resultcountaan = mysqli_query($conn, $countaan);
+
+// de resultaten ophalen en in een variabele zetten
+$countaanresult = mysqli_fetch_array($resultcountaan);
+
+?>
+
 <h2 class="font-weight-bold text-cyan-900" style="text-align: center; padding-top: 40px">
                     <!-- titel tekst -->
                     Aanmelden voor de opleiding sterrenkunde bij SpaceY
                 </h2>
+                <p style="text-align: center;" class="text-cyan-600 font-weight-bold"><?php echo $countaanresult[0]; ?> Studenten gingen je voor op de sterrenkunde opleiding.</p>
 <section class="h-100">
 
     <!-- begin container -->
@@ -120,12 +134,12 @@
 </section>
 <section>
     <!-- begin container -->
-    <div class="container py-5">
+    <div class="container py-5" style="margin-top: -10%;">
         <div class="d-flex flex-column justify-content-center align-items-center text-center">
             <div class="col-sm-6">
                 <h2 class="font-weight-bold text-cyan-900">
                     <!-- tekst bij wat wij bieden -->
-                    Wat wij bieden
+                    Wat houd de opleiding in?
                 </h2>
             </div>
             <div class="my-3">
@@ -157,10 +171,10 @@
                                 </div>
                             </span>
                             <!-- tekst kwaliteit -->
-                            <h4 class="mt-3">Kwaliteit</h4>
+                            <h4 class="mt-3">Toelatingseisen</h4>
                             <div class="text-muted my-2">
                                 <!-- tekst kwaliteit -->
-                            Wij hebben de beste leer methode opgezet voor de studenten voor het uiterste resultaat.
+                            Je beschikt over passie in sterrenkunde en je hebt een goede conditie.
                             </div>
                         </div>
                     </div>
@@ -190,10 +204,10 @@
                                 </div>
                             </span>
                             <!-- tekst interactief -->
-                            <h4 class="mt-3">Interactief</h4>
+                            <h4 class="mt-3">Duur van de opleiding</h4>
                             <div class="text-muted my-2">
                                 <!-- tekst interactief -->
-                            Er is een spel voor jullie opgezet om een beeld te krijgen van de opleiding.
+                            De opleiding voor sterrenkunde bij SpaceY duurt 6 jaar.
                             </div>
                         </div>
                     </div>
@@ -223,10 +237,10 @@
                                 </div>
                             </span>
                             <!-- tekst praktijk -->
-                            <h4 class="mt-3">Praktijk</h4>
+                            <h4 class="mt-3">Wat houd de opleiding in?</h4>
                             <div class="text-muted my-2">
                                 <!-- tekst bij praktijk -->
-                            Naast het theorie zullen jullie zeer zeker ook het praktijk krijgen voor een optimale ervaring om alles beter te begrijpen.
+                            JE leert hoe je veilig buiten aarde kan gaan en hier onderzoeken kan gaan voeren.
                             </div>
                         </div>
                     </div>
@@ -235,7 +249,26 @@
         </div>
     </div>
 </section>
+<br>
+<div style="text-align: center;">
+<h2 class="font-weight-bold text-cyan-900"><!-- tekst bij wat wij bieden -->Krijg een beeld van de opleiding</h2>
+<iframe width="960" height="415" src="https://www.youtube.com/embed/52Gg9CqhbP8" title="YouTube video player" frameborder="0" style="border-radius: 40px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 <!-- einde sectie -->
+<br>
+<br>
+<div class="container">
+<h2 class="font-weight-bold text-cyan-900" style="text-align: center;"><!-- tekst bij wat wij bieden -->Je hebt jezelf bedacht? Meld je dan hier af.</h2>
+    <form action="./index.php?content=aanmelden" method="POST">
+        <div class="mb-3">
+            <!-- label tekst -->
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" name="emails" id="email" placeholder="jan.broekel@gmail.com" value="">
+        </div>
+        <div class="btn btn-block btn-cyan-900">
+        <input type="submit" name="submits" value="Verzenden">
+        </div>
+    </form>
+</div>
 
 <?php
 
@@ -262,17 +295,9 @@ if (empty($_POST["email"]) && isset($_POST["submit"])) {
     }
 }
 
-
-
-
-
-    
-// $motivatie = cleaning($_POST["motivatie"]);
-// $naam = cleaning($_POST["naam"]);
-// $email = cleaning($_POST["email"]);
-
-// header("location: ../../index.php?content=home&alert=GeenEmail");
-
-// $sql = "INSERT INTO `pro_aanmeldingen` (`id`, `naam`, `email`, `motivatie`, `datum`) VALUES (NULL, '$naam', '$email', '$motivatie', '$datum');";
-// mysqli_query($connect, $sql); 
+if(isset($_POST["submits"])){
+    $emails = cleaning($_POST["emails"]);
+    $sql = "DELETE FROM `pro_aanmeldingen` WHERE `email`='$emails';";
+    mysqli_query($connect, $sql); 
+}
 ?>
